@@ -1,0 +1,49 @@
+Dominion Plan
+
+Classes:
+Board
+	Should store quantity of cards on board with vector
+	It shall process the win condition.
+	It shall manage turn process
+Player
+	Player name
+	Should store cards in player's hand.
+	Should store cards in discard pile.
+	The player class shall keep track of the money the player has,
+	the number of actions the player has, and the buy power. 
+	
+Card
+	The card class should contain the cost of the card, the action to be 
+	performed. 
+
+Interface:
+
+Mine(10)	Market(7)	Militia(3)	Cellar(10)
+
+Smithy(7)	Workshop(4)	Mine(24)	Woodcutter(11)
+
+Money:
+Copper(21)	Silver(25)	Gold(21)
+
+Victory:
+Estate(21)	Duchy(21)	Province(21)
+
+Hand:
+Copper	Smithy	Province	Copper	Village
+
+Option(s)
+(P)lay action	(B)uy	(V)iew card
+
+At the start of the game:
+1. Everyone draws 7 copper cards and 3 estates
+2. Everyone shuffles the cards and puts them face down on their deck
+3. Everyone draws five cards from the deck and the game begins.
+
+The game ends when:
+- Three piles of cards have emptied from the board OR
+- The Estate pile is empty
+
+Phases:
+1. Action Phase - The player may play an action
+2. Buy Phase - The player may buy a card
+3. Clean-up phase - The player must discard both played and unplayed cards and draws 5 new cards.
